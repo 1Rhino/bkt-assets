@@ -8,15 +8,8 @@
 
 //Specify full URL to down and right arrow images (23 is padding-right to add to top level LIs with drop downs):
 var arrowimages = {
-  down: [
-    "downarrowclass",
-    "http://localhost:8080/js/menujquery/arrowdown.png",
-    23,
-  ],
-  right: [
-    "rightarrowclass",
-    "http://localhost:8080/js/menujquery/arrowright.png",
-  ],
+  down: ["downarrowclass", "/js/menujquery/arrowdown.png", 23],
+  right: ["rightarrowclass", "/js/menujquery/arrowright.png"],
 };
 
 var jqueryslidemenu = {
