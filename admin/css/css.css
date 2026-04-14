@@ -1,0 +1,166 @@
+body {
+	background-image: url(../images/backG.gif);
+}
+.finderTitle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px; color:#FF0000;
+	padding-left:7px; font-weight:bold;
+}
+.finderCbo{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px; color:#333333; font-weight:bold;
+	padding-left:13px; width:145px;
+	text-align:center;
+}
+.btnFinder{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px; font-weight:bold;
+	text-align:right; padding-right:10px;
+	background:url(../images/btnFinder.gif);
+	width:60px; height:22px;
+	border:#FFFFFF 0px;
+}
+.adv{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px; color:#FF0000; font-weight:bold;
+	text-align:center;
+}
+.hotline{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px; color:#FF0000; font-weight:bold;
+	padding-left:10px
+}
+.finderHi{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px; color:#0066FF; text-align:right;
+	padding-right:30px; font-weight:bold;
+}
+.login{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px; color:#333333;
+	text-align:right; padding-right:5px; }
+.login a{
+	color:#0033FF;
+	text-decoration:none; }
+.login a:hover{
+	color:#0033FF;
+	text-decoration:underline;
+}
+.logintxt{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px; color:#333333;
+	 width:100px; height:19px;
+}
+.logintxt2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px; color:#333333;
+	 width:200px; height:19px;
+}
+.btnLogin{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px; cursor:hand; color:#0033FF; font-weight:bold;
+	text-align:right; padding-right:10px;
+	background:url(../images/btnLogin.gif);
+	width:80px; height:22px;
+	border:#FFFFFF 0px;
+}
+.nguoitimviec{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px; color:#0066CC; padding-left:20px;
+	font-weight:bold;
+}
+.nguoitimviecsub{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px; color:#006699; padding-left:15px;
+	padding-top:5px; padding-right:10px}
+.nguoitimviecsub a{
+	text-decoration:none;
+	color:#006699;}
+.nguoitimviecsub a:hover{
+	text-decoration:underline;
+	color:#0066FF;
+}
+.career{
+	font-family:Arial, Helvetica, sans-serif; font-size:11px;
+	color:#0066FF; font-weight:bold;
+	padding-left:20px;}
+.career a{
+	color:#0066FF;
+	text-decoration:none; }	
+.career a:hover{
+	color:0066FF;
+	text-decoration:underline;
+}
+.red{
+	font-family:Arial, Helvetica, sans-serif; font-size:12px;
+	color:#FF0000; font-weight:400; 
+}
+.xcontents{
+	font-family:Arial, Helvetica, sans-serif; font-size:11px;
+	color:#333333;}
+.contents{
+	font-family:Arial, Helvetica, sans-serif; font-size:11px;
+	color:#333333; padding-left:10px; padding-right:10px; }
+.contents a{
+	color:#333333;
+	text-decoration:none; }
+.contents a:hover{
+	color:#0033FF;
+	text-decoration:underline; 
+}
+.menuTop{
+	font-family:Arial, Helvetica, sans-serif; font-size:14px;
+	color:#000066; padding-left:20px; font-weight:bold;}
+.menuTop a{
+	color:#000066;
+	text-decoration:none; }
+.menuTop a:hover{
+	text-decoration:underline;
+	color:#FF0066;
+}
+.combo{
+	font-family:Arial, Helvetica, sans-serif; font-size:11px;
+	color:#333333; 
+}
+
+.btnReset {
+	font-family:Arial, Helvetica, sans-serif; font-size:11px;
+	background-color:#FFDC8A;
+	color:#2A1F55;
+	font-weight:bold; 
+
+}
+.btnDelete
+{
+font-family:Arial, Helvetica, sans-serif; font-size:11px;
+	background-color:#FF9D9D;
+	color:#2A1F55;
+	font-weight:bold;
+}
+.btnAdd{ font-family:Arial, Helvetica, sans-serif; font-size:11px;
+	background-color:#330099;
+	color:#FFFFFF;
+	font-weight:bold;	
+}
+.btnSubmit {
+	background-color:#A0CBFE;
+	color:#2A1F55;
+	font-weight:bold;
+	width:80px;
+}
+#gridline #lhead {
+	BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #ffffff
+}
+#gridline #lbody {
+	FONT-SIZE: 11px; COLOR: #666666; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: Verdana; 
+}
+#gridlineOver #lhead {
+	BORDER-BOTTOM: #e3fbbf 1px solid; BACKGROUND-COLOR: #b1f56d
+}
+#gridlineOver #lbody {
+	FONT-SIZE: 11px; COLOR: #339900; BORDER-BOTTOM: #e3fbbf 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #f1fed8
+}
+.listwork{
+	font-family:Arial, Helvetica, sans-serif; font-size:12px;
+	color:#0033FF; font-weight:bold; padding-left:5px;
+}

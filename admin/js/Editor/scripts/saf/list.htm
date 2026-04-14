@@ -1,0 +1,421 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../style/editor.css" rel="stylesheet" type="text/css">
+<style>
+.box{cursor:default;border:#9B95A6 1px solid;width:40px;background:white;}
+</style>
+<script>
+	var sLangDir=window.opener.oUtil.langDir;
+	document.write("<scr"+"ipt src='../language/"+sLangDir+"/list.js'></scr"+"ipt>");
+</script>
+<script>writeTitle()</script>
+<script>
+
+//parameter for popup window, since standard window.open doesn't%20support%20parametervar%20dialogArgument;/reference-2520to-2520pop-256ADDF242#D6D6E2%202px%20solid";%20%20%20%20%20%20%20%20%20%20%20%20tab1.style.borderBottom="none";%20%20%20%20%20%20%20%20%20%20%20%20%20tab1.style.background="#F2F1F8";%20%20%20%20%20%20%20%20%20%20%20%20tab1.style.cursor="";%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tab2.style.border="#D6D6E2%202px%20solid";%20%20%20%20%20%20%20%20%20%20%20%20tab2.style.borderLeft="none";%20%20%20%20%20%20%20%20%20%20%20%20tab2.style.background="#E9E8F2";%20%20%20%20%20%20%20%20%20%20%20%20tab2.style.cursor="hand";%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20divNumbered.style.display="block"%20%20%20%20%20%20%20%20%20%20%20%20divBulleted.style.display="none"%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20break;%20%20%20%20%20%20%20%20case%202:%20%20%20%20%20%20%20%20%20%20%20%20tab1.style.border="#D6D6E2%202px%20solid";%20%20%20%20%20%20%20%20%20%20%20%20tab1.style.borderRight="none";%20%20%20%20%20%20%20%20%20%20%20%20tab1.style.background="#E9E8F2";%20%20%20%20%20%20%20%20%20%20%20%20tab1.style.cursor="hand";%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tab2.style.border="#D6D6E2%202px%20solid";%20%20%20%20%20%20%20%20%20%20%20%20tab2.style.borderBottom="none";%20%20%20%20%20%20%20%20%20%20%20%20%20tab2.style.background="#F2F1F8";%20%20%20%20%20%20%20%20%20%20%20%20tab2.style.cursor="";%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20divNumbered.style.display="none"%20%20%20%20%20%20%20%20%20%20%20%20divBulleted.style.display="block"%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20break;%20%20%20%20%20%20%20%20%20%20%20%20%20%20}%20%20%20%20}%20%20%20function%20GetElement(oElement,sMatchTag)%20%20%20%20{%20%20%20%20while%20(oElement!=null&&oElement.tagName!=sMatchTag)%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20if(oElement.tagName=="BODY")return%20null;%20%20%20%20%20%20%20%20oElement=oElement.parentNode;%20%20%20%20%20%20%20%20}%20%20%20%20return%20oElement;%20%20%20%20}%20%20%20%20function%20doWindowFocus()%20%20%20%20{%20%20%20%20window.opener.oUtil.onSelectionChanged=new%20Function("realTime()");%20%20%20%20}%20%20%20%20function%20bodyOnLoad()%20%20%20%20{%20%20%20%20%20%20%20tabClick(1);%20%20%20%20window.onfocus=doWindowFocus;%20%20%20%20%20%20%20window.opener.oUtil.onSelectionChanged=new%20Function("realTime()");%20%20%20%20%20%20%20%20if(window.opener.oUtil.obj.cmdAssetManager!="")%20%20%20%20%20%20%20%20document.getElementById("btnAsset").style.display="block";%20%20%20%20%20%20%20%20realTime()%20%20%20%20}%20%20%20%20function%20openAsset()%20%20%20%20{%20%20%20%20eval(window.opener.oUtil.obj.cmdAssetManager);%20%20%20%20%20%20%20%20}%20%20%20%20function%20setAssetValue(v)%20%20%20%20%20{%20%20%20%20document.getElementById("inpImgURL").value%20=%20v;%20%20%20%20}%20%20%20%20%20%20%20%20function%20modalDialogShow(url,width,height)%20%20%20%20{%20%20%20%20if(url.indexOf("?")==-1)%20url=url+"?ffilter=image";//no%20querystring%20%20%20%20else%20url=url+"&ffilter=image";%20%20%20%20%20%20%20%20var%20left%20=%20screen.availWidth/2%20-%20width/2;%20%20%20%20var%20top%20=%20screen.availHeight/2%20-%20height/2;%20%20%20%20activeModalWin%20=%20window.open(url,%20"",%20"width="+width+"px,height="+height+",left="+left+",top="+top);%20%20%20%20window.onfocus%20=%20function(){if%20(activeModalWin.closed%20==%20false){activeModalWin.focus();};};%20%20%20%20%20%20%20%20}%20%20%20%20function%20realTime()%20%20%20%20{%20%20%20%20var%20oEditor=window.opener.oUtil.oEditor;%20%20%20%20var%20oSel=oEditor.getSelection();%20%20%20%20%20%20%20%20var%20oElement%20=%20window.opener.getSelectedElement(oSel);%20%20%20%20while%20(oElement!=null%20&&%20oElement.nodeName!="UL"%20&&%20oElement.nodeName!="OL")%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20if(oElement.nodeName=="BODY")%20return;%20%20%20%20%20%20%20%20oElement=oElement.parentNode;%20%20%20%20%20%20%20%20}%20%20%20%20var%20range%20=%20oEditor.document.createRange();%20%20%20%20range.selectNode(oElement);%20%20%20%20oSel%20=%20oEditor.getSelection();%20%20%20%20oSel.removeAllRanges();%20%20%20%20oSel.addRange(range);%20%20%20%20%20%20%20%20var%20box1%20=%20document.getElementById("box1");%20%20%20%20var%20box2%20=%20document.getElementById("box2");%20%20%20%20var%20box3%20=%20document.getElementById("box3");%20%20%20%20var%20box4%20=%20document.getElementById("box4");%20%20%20%20var%20box5%20=%20document.getElementById("box5");%20%20%20%20var%20box6%20=%20document.getElementById("box6");%20%20%20%20var%20box7%20=%20document.getElementById("box7");%20%20%20%20var%20box8%20=%20document.getElementById("box8");%20%20%20%20%20%20%20%20var%20inpStarting%20=%20document.getElementById("inpStarting");%20%20%20%20var%20inpLeftMargin1%20=%20document.getElementById("inpLeftMargin1");%20%20%20%20var%20inpLeftMargin2%20=%20document.getElementById("inpLeftMargin2");%20%20%20%20var%20inpImgURL%20=%20document.getElementById("inpImgURL");%20%20%20%20%20%20%20%20if(oElement.nodeName=="OL")%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20tabClick(1);%20%20%20%20%20%20%20%20if(oElement.type==""||oElement.type=="1")doClick1(box1);%20%20%20%20%20%20%20%20if(oElement.type=="A")doClick1(box2);%20%20%20%20%20%20%20%20if(oElement.type=="a")doClick1(box3);%20%20%20%20%20%20%20%20if(oElement.type=="I")doClick1(box4);%20%20%20%20%20%20%20%20if(oElement.type=="i")doClick1(box5);%20%20%20%20%20%20%20%20}%20%20%20%20if(oElement.nodeName=="UL")%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20tabClick(2);%20%20%20%20%20%20%20%20if(oElement.type==""||oElement.type=="disc")doClick1(box6);%20%20%20%20%20%20%20%20if(oElement.type=="circle")doClick1(box7);%20%20%20%20%20%20%20%20if(oElement.type=="square")doClick1(box8);%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20}%20%20%20%20if(oElement.start%20&&%20oElement.start%20!=%20-1)%20%20%20%20%20%20%20%20inpStarting.value=oElement.start;%20%20%20%20else%20%20%20%20%20%20%20%20inpStarting.value="";%20%20%20%20if(oElement.style.marginLeft=="")%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20inpLeftMargin1.value="";%20%20%20%20%20%20%20%20inpLeftMargin2.value="";%20%20%20%20%20%20%20%20}%20%20%20%20else%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20inpLeftMargin1.value=oElement.style.marginLeft;%20%20%20%20%20%20%20%20inpLeftMargin2.value=oElement.style.marginLeft;%20%20%20%20%20%20%20%20}%20%20%20%20//list-style-image%20%20%20%20if(oElement.style.listStyleImage=="")%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20inpImgURL.value=""%20%20%20%20%20%20%20%20}%20%20%20%20else%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20s=oElement.style.listStyleImage;%20%20%20%20%20%20%20%20s=s.substring(4,s.length-1);%20%20%20%20%20%20%20%20inpImgURL.value=s;%20%20%20%20%20%20%20%20}%20%20%20%20}%20%20%20%20function%20setLeftMargin1(oEl)%20%20%20%20{%20%20%20%20var%20inpLeftMargin1%20=%20document.getElementById("inpLeftMargin1");%20%20%20%20%20%20%20%20if(inpLeftMargin1.value!="")%20%20%20%20%20%20%20%20oEl.style.marginLeft=inpLeftMargin1.value;%20%20%20%20else%20%20%20%20%20%20%20%20oEl.style.marginLeft="";%20%20%20%20%20%20%20%20}%20%20%20%20function%20setLeftMargin2(oEl)%20%20%20%20{%20%20%20%20var%20inpLeftMargin2%20=%20document.getElementById("inpLeftMargin2");%20%20%20%20%20%20%20%20if(inpLeftMargin2.value!="")%20%20%20%20%20%20%20%20oEl.style.marginLeft=inpLeftMargin2.value;%20%20%20%20else%20%20%20%20%20%20%20%20oEl.style.marginLeft="";%20%20%20%20%20%20%20%20}%20%20%20%20function%20doApply()%20%20%20%20{%20%20%20%20var%20oEditor=window.opener.oUtil.oEditor;%20%20%20%20var%20oSel=oEditor.getSelection();var%20obj=window.opener.oUtil.obj;%20%20%20%20obj.saveForUndo();%20%20%20%20%20%20%20var%20box1%20=%20document.getElementById("box1");%20%20%20%20var%20box2%20=%20document.getElementById("box2");%20%20%20%20var%20box3%20=%20document.getElementById("box3");%20%20%20%20var%20box4%20=%20document.getElementById("box4");%20%20%20%20var%20box5%20=%20document.getElementById("box5");%20%20%20%20var%20box6%20=%20document.getElementById("box6");%20%20%20%20var%20box7%20=%20document.getElementById("box7");%20%20%20%20var%20box8%20=%20document.getElementById("box8");var%20bBox1=false;var%20bBox2=false;var%20bBox3=false;var%20bBox4=false;var%20bBox5=false;var%20bBox6=false;var%20bBox7=false;var%20bBox8=false;if(box1.getAttribute("selThis")=="selThis")bBox1=true;if(box2.getAttribute("selThis")=="selThis")bBox2=true;if(box3.getAttribute("selThis")=="selThis")bBox3=true;if(box4.getAttribute("selThis")=="selThis")bBox4=true;if(box5.getAttribute("selThis")=="selThis")bBox5=true;if(box6.getAttribute("selThis")=="selThis")bBox6=true;if(box7.getAttribute("selThis")=="selThis")bBox7=true;if(box8.getAttribute("selThis")=="selThis")bBox8=true;%20%20%20%20%20%20%20%20var%20inpStarting%20=%20document.getElementById("inpStarting");%20%20%20%20var%20inpLeftMargin1%20=%20document.getElementById("inpLeftMargin1");%20%20%20%20var%20inpLeftMargin2%20=%20document.getElementById("inpLeftMargin2");%20%20%20%20var%20inpImgURL%20=%20document.getElementById("inpImgURL");%20%20%20%20var%20oElement%20=%20window.opener.getSelectedElement(oSel);%20%20%20%20while%20(oElement!=null%20&&%20oElement.nodeName!="UL"%20&&%20oElement.nodeName!="OL")%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20if(oElement.nodeName=="BODY")obj.doCmd("InsertUnOrderedList");%20%20%20%20%20%20%20%20oElement=oElement.parentNode;%20%20%20%20%20%20%20%20}%20%20%20%20var%20oElement%20=%20window.opener.getSelectedElement(oSel);%20%20%20%20while%20(oElement!=null%20&&%20oElement.nodeName!="UL"%20&&%20oElement.nodeName!="OL")%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20if(oElement.nodeName=="BODY")return%20%20%20%20%20%20%20%20oElement=oElement.parentNode;%20%20%20%20%20%20%20%20}%20%20%20%20%20%20%20%20%20oElement.removeAttribute("type");%20%20%20%20oElement.removeAttribute("start");%20%20%20%20//list-style-image%20%20%20%20if(inpImgURL.value!="")%20%20%20%20%20%20%20%20{%20%20%20%20%20%20%20%20oElement.style.listStyleImage="url('"+inpImgURL.value+"')";
+        setLeftMargin2(oElement);
+
+        if(bBox6)oElement.type="disc";
+        if(bBox7)oElement.type="circle";
+        if(bBox8)oElement.type="square";
+
+        if(oElement.tagName=="OL")
+            obj.doCmd("InsertUnOrderedList");
+        return;
+        }
+    else
+        {
+        oElement.style.listStyleImage="";
+        }       
+
+    if(inpStarting.value=="")
+        nStart=1;
+    else
+        nStart=inpStarting.value;
+
+    if(bBox1)
+        {
+        if(oElement.tagName=="UL")obj.doCmd("InsertOrderedList");
+        oElement = window.opener.getSelectedElement(oSel);
+
+        oElement.type="1";
+        oElement.start=nStart;
+        setLeftMargin1(oElement);        
+        }
+    if(bBox2)
+        {
+        if(oElement.tagName=="UL")obj.doCmd("InsertOrderedList");
+        oElement = window.opener.getSelectedElement(oSel);
+
+        oElement.type="A";
+        oElement.start=nStart;
+        setLeftMargin1(oElement);        
+        }
+    if(bBox3)
+        {
+        if(oElement.tagName=="UL")obj.doCmd("InsertOrderedList");
+        oElement = window.opener.getSelectedElement(oSel);
+
+        oElement.type="a";
+        oElement.start=nStart;
+        setLeftMargin1(oElement);        
+        }
+    if(bBox4)
+        {
+        if(oElement.tagName=="UL")obj.doCmd("InsertOrderedList");
+        oElement = window.opener.getSelectedElement(oSel);
+
+        oElement.type="I";
+        oElement.start=nStart;
+        setLeftMargin1(oElement);        
+        }
+    if(bBox5)
+        {
+        if(oElement.tagName=="UL")obj.doCmd("InsertOrderedList");
+        oElement = window.opener.getSelectedElement(oSel);
+
+        oElement.type="i";
+        oElement.start=nStart;
+        setLeftMargin1(oElement);        
+        }       
+
+    if(bBox6)
+        {
+        if(oElement.tagName=="OL")obj.doCmd("InsertUnOrderedList");
+        oElement = window.opener.getSelectedElement(oSel);
+
+        oElement.type="disc";
+        setLeftMargin2(oElement);        
+        }
+    if(bBox7)
+        {
+        if(oElement.tagName=="OL")obj.doCmd("InsertUnOrderedList");
+        oElement = window.opener.getSelectedElement(oSel);
+
+        oElement.type="circle";
+        setLeftMargin2(oElement);        
+        }
+    if(bBox8)
+        {
+        if(oElement.tagName=="OL")obj.doCmd("InsertUnOrderedList");
+        oElement = window.opener.getSelectedElement(oSel);
+
+        oElement.type="square";
+        setLeftMargin2(oElement);        
+        }
+    realTime();
+    }   
+    
+function doClick1(oEl)
+    {
+    var inpImgURL = document.getElementById("inpImgURL");
+    
+    var box1 = document.getElementById("box1");
+    var box2 = document.getElementById("box2");
+    var box3 = document.getElementById("box3");
+    var box4 = document.getElementById("box4");
+    var box5 = document.getElementById("box5");
+    var box6 = document.getElementById("box6");
+    var box7 = document.getElementById("box7");
+    var box8 = document.getElementById("box8");
+    
+    box1.style.border='white 2px solid';
+    box1.setAttribute("selThis", "");
+    box2.style.border='white 2px solid';
+    box2.setAttribute("selThis", "");
+    box3.style.border='white 2px solid';
+    box3.setAttribute("selThis", "");
+    box4.style.border='white 2px solid';
+    box4.setAttribute("selThis", "");
+    box5.style.border='white 2px solid';
+    box5.setAttribute("selThis", "");
+    box6.style.border='white 2px solid';
+    box6.setAttribute("selThis", "");
+    box7.style.border='white 2px solid';
+    box7.setAttribute("selThis", "");
+    box8.style.border='white 2px solid';
+    box8.setAttribute("selThis", "");
+    
+    oEl.style.border='#708090 2px solid';
+    oEl.setAttribute("selThis", "selThis");
+    
+    inpImgURL.value="";
+    }
+    
+function doMouseOut(oEl)    
+    {
+    if(oEl.getAttribute("selThis")=="selThis")
+        {
+        oEl.style.border='#708090 2px solid';
+        }
+    else
+        {
+        oEl.style.border='white 2px solid';
+        }
+    }
+    
+function doMouseOver(oEl)   
+    {
+    if(oEl.getAttribute("selThis")!="selThis") 
+        {
+        oEl.style.border='#e0e0e0 2px solid';
+        }
+    
+    }
+    
+</script>
+</head>
+<body onload="loadTxt();bodyOnLoad();this.focus()" style="overflow:hidden;">
+
+<table width=100% height=100% align=center cellpadding=0 cellspacing=0>
+<tr>
+<td valign=top style="padding-top:12px;padding-left:10px;padding-right:10px;padding-bottom:0px;height:100%">
+
+    <table cellpadding=0 cellspacing=0>
+    <tr>
+    <td id=tab1 style="cursor:hand;padding:6px;border:#D6D6E2 2px solid;border-bottom:none;background:#E9E8F2" onclick="tabClick(1)" nowrap><b><span id=txtLang name=txtLang>Numbered</span></b></td>
+    <td id=tab2 style="cursor:hand;padding:6px;border:#D6D6E2 2px solid;border-left:none;background:#E9E8F2" onclick="tabClick(2)" nowrap><b><span id=txtLang name=txtLang>Bulleted</span></b></td>
+    <td style="border-bottom:#D6D6E2 2px solid;" width=100%>&nbsp;</td>
+    </tr>
+    </table>    
+    
+
+    <table cellpadding=0 cellspacing=0 style="border:#D6D6E2 2px solid;border-top:none;width:100%;height:195px;background:#F2F1F8;" id="Table3">
+    <tr>
+    <td style="padding:7px;" valign=top height=100%>
+
+    <!-- NUMBERED -->
+    <div id=divNumbered style="display:block;">
+    
+    <table>
+    <tr>
+    <td class="box" style="padding:1px">
+        <table cellpadding="0" cellspacing="0">
+        <tr>
+        <td id="box1" style="color:#555555;border:white 2px solid;padding:3px;padding-right:0px"
+            onclick="doClick1(this)" 
+            onmouseover="doMouseOver(this)" 
+            onmouseout="doMouseOut(this)">
+        <ol style="margin-left:1px;margin-right:6px;margin-top:2px;margin-bottom:2px" type="1">
+        <li>-----</li>
+        <li>-----</li>
+        <li>-----</li>
+        </ol>   
+        </td>
+        </tr>
+        </table>
+    </td>
+    <td>&nbsp;</td>
+    <td class="box">
+        <table cellpadding="0" cellspacing="0">
+        <tr>
+        <td id="box2" style="color:#555555;border:white 2px solid;padding:3px;padding-right:0px"
+            onclick="doClick1(this)" 
+            onmouseover="doMouseOver(this)" 
+            onmouseout="doMouseOut(this)">
+        <ol style="margin-left:1px;margin-right:6px;margin-top:2px;margin-bottom:2px" type="A">
+        <li>-----</li>
+        <li>-----</li>
+        <li>-----</li>
+        </ol>   
+        </td>
+        </tr>
+        </table>
+    </td>
+    <td>&nbsp;</td>
+    <td class="box">
+        <table cellpadding="0" cellspacing="0">
+        <tr>
+        <td id="box3" style="color:#555555;border:white 2px solid;padding:3px;padding-right:0px"
+            onclick="doClick1(this)" 
+            onmouseover="doMouseOver(this)" 
+            onmouseout="doMouseOut(this)">
+        <ol style="margin-left:1px;margin-right:6px;margin-top:2px;margin-bottom:2px" type="a">
+        <li>-----</li>
+        <li>-----</li>
+        <li>-----</li>
+        </ol>   
+        </td>
+        </tr>
+        </table>
+    </td>
+    </tr>
+    <tr>
+    <td class="box">
+        <table cellpadding="0" cellspacing="0">
+        <tr>
+        <td id="box4" style="color:#555555;border:white 2px solid;padding:3px;padding-right:0px"
+            onclick="doClick1(this)" 
+            onmouseover="doMouseOver(this)" 
+            onmouseout="doMouseOut(this)">
+        <ol style="margin-left:1px;margin-right:6px;margin-top:2px;margin-bottom:2px" type="I">
+        <li>-----</li>
+        <li>-----</li>
+        <li>-----</li>
+        </ol>   
+        </td>
+        </tr>
+        </table>
+    </td>
+    <td>&nbsp;</td>
+    <td class="box">
+        <table cellpadding="0" cellspacing="0">
+        <tr>
+        <td id="box5" style="color:#555555;border:white 2px solid;padding:3px;padding-right:0px"
+            onclick="doClick1(this)" 
+            onmouseover="doMouseOver(this)" 
+            onmouseout="doMouseOut(this)">
+        <ol style="margin-left:1px;margin-right:6px;margin-top:2px;margin-bottom:2px" type="i">
+        <li>-----</li>
+        <li>-----</li>
+        <li>-----</li>
+        </ol>   
+        </td>
+        </tr>
+        </table>
+    </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td nowrap colspan="5" style="padding-top:5px">
+        <span id=txtLang name=txtLang style="width:90px">Starting Number</span>: <input class="inpTxt" type="text" name="inpStarting" id="inpStarting" value="1" size="3">
+    </td>
+    </tr>
+    <tr>
+    <td nowrap colspan="5" style="padding-top:5px">
+        <span id=txtLang name=txtLang style="width:90px">Left Margin</span>: 
+        <select name="inpLeftMargin1" id="inpLeftMargin1" class="inpSel">
+            <option value=""></option>
+            <option value="1em" selected>1em</option>
+            <option value="2em">2em</option>
+            <option value="3em">3em</option>
+            <option value="4em">4em</option>
+            <option value="5em">5em</option>
+            <option value="6em">6em</option>
+            <option value="7em">7em</option>            
+        </select>
+    </td>
+    </tr>
+    </table>
+    
+    </div>
+
+    <!-- BULLETED -->
+    <div id="divBulleted" style="display:none;">
+
+    <table>
+    <tr>
+    <td class="box" style="padding:1px">
+        <table cellpadding="0" cellspacing="0">
+        <tr>
+        <td id="box6" style="color:#555555;border:white 2px solid;padding:3px;padding-right:0px"
+            onclick="doClick1(this)" 
+            onmouseover="doMouseOver(this)" 
+            onmouseout="doMouseOut(this)">
+        <ul style="margin-left:1px;margin-right:5px;margin-top:2px;margin-bottom:2px" type="disc">
+        <li>-----</li>
+        <li>-----</li>
+        <li>-----</li>
+        </ul>   
+        </td>
+        </tr>
+        </table>
+    </td>
+    <td>&nbsp;</td>
+    <td class="box">
+        <table cellpadding="0" cellspacing="0">
+        <tr>
+        <td id="box7" style="color:#555555;border:white 2px solid;padding:3px;padding-right:0px"
+            onclick="doClick1(this)" 
+            onmouseover="doMouseOver(this)" 
+            onmouseout="doMouseOut(this)">
+        <ul style="margin-left:1px;margin-right:5px;margin-top:2px;margin-bottom:2px" type="circle">
+        <li>-----</li>
+        <li>-----</li>
+        <li>-----</li>
+        </ul>   
+        </td>
+        </tr>
+        </table>
+    </td>
+    <td>&nbsp;</td>
+    <td class="box">
+        <table cellpadding="0" cellspacing="0">
+        <tr>
+        <td id="box8" style="color:#555555;border:white 2px solid;padding:3px;padding-right:0px"
+            onclick="doClick1(this)" 
+            onmouseover="doMouseOver(this)" 
+            onmouseout="doMouseOut(this)">
+        <ul style="margin-left:1px;margin-right:5px;margin-top:2px;margin-bottom:2px" type="square">
+        <li>-----</li>
+        <li>-----</li>
+        <li>-----</li>
+        </ul>   
+        </td>
+        </tr>
+        </table>
+    </td>
+    </tr>
+    <!--
+    <tr>
+    <td colspan="5" style="padding-top:5px;height:86px">&nbsp;
+    </td>
+    </tr>
+    -->
+    <tr>
+    <td colspan="5" style="padding-top:5px;height:57px">&nbsp;
+    </td>
+    </tr>
+    <tr>
+    <td colspan="5" style="padding-top:5px">
+        <table cellpadding="0" cellspacing="0" style="width:100%" id="Table1">
+        <tr>
+        <td nowrap><span id=txtLang name=txtLang style="width:90px">Using Image - url</span>:</td>
+        <td style="width:100%;padding-left:3px">
+          <input type="text" id="inpImgURL" name=inpImgURL style="width:100%" class="inpTxt" >
+        </td>
+        <td>
+          <input type="button" value="" onclick="openAsset()" id="btnAsset" name="btnAsset" style="display:none;background:url('openAsset.gif');width:20px;height:16px;border:#a5acb2 1px solid;margin-left:1px;">
+        </td>
+        </tr>
+        </table>
+    </td>
+    </tr>
+    
+    <tr>
+    <td colspan="5" style="padding-top:5px">
+        <span nowrap id=txtLang name=txtLang style="width:90px">Left Margin</span>: 
+        <select name="inpLeftMargin2" id="inpLeftMargin2" class="inpSel">
+            <option value=""></option>
+            <option value="1em" selected>1em</option>
+            <option value="2em">2em</option>
+            <option value="3em">3em</option>
+            <option value="4em">4em</option>
+            <option value="5em">5em</option>
+            <option value="6em">6em</option>
+            <option value="7em">7em</option>            
+        </select>
+    </td>
+    </tr>
+    </table>
+    
+    </div>
+
+    </td>
+    </tr>
+    </table>
+    
+</td>
+</tr>
+<tr>
+<td class="dialogFooter" style="padding:13px;padding-top:7px;padding-bottom:7px;" align="right">
+    <input type="button" name=btnCancel id=btnCancel value="cancel" onclick="self.close()" class="inpBtn" onmouseover="this.className='inpBtnOver';" onmouseout="this.className='inpBtnOut'">
+    <input type="button" name=btnApply id=btnApply value="apply" onclick="doApply();window.focus();" class="inpBtn" onmouseover="this.className='inpBtnOver';" onmouseout="this.className='inpBtnOut'">
+    <input type="button" name=btnOk id=btnOk value=" ok " onclick="doApply();self.close()" class="inpBtn" onmouseover="this.className='inpBtnOver';" onmouseout="this.className='inpBtnOut'">
+</td>
+</tr>
+</table>
+
+</body>
+</html>

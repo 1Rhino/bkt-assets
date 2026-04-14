@@ -1,0 +1,18 @@
+﻿#dhtmltooltiptxn
+{
+    position: absolute;
+    padding: 0px;
+    visibility: hidden;
+    z-index: 150;
+    /*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+.bgSlice{
+	clear:both;
+	width:auto;
+	border:1px solid #09F;
+}
+.bgSlice img{
+	width:auto; height:auto;
+	border:0; padding:3px;
+}

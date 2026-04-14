@@ -1,0 +1,38 @@
+.button
+{         
+        width:990px; 
+        height:auto;
+        margin:0; padding:0;
+        text-align:left;      
+        background:url(/assets/bg/header-top.jpg) repeat-x center center;  
+}
+
+.main{
+        clear:both;
+	width:990px; height:auto;
+        background:white;       
+}
+.header{
+        position:relative;
+        width:990px; height:auto;
+}
+
+.body{
+        clear:both;
+        width:100%; height:auto;
+        padding:0;        
+}
+.list_pages{
+        width:95%; height:auto;
+        text-align:center;
+}
+.footer{
+        clear:both;
+        width:100%; height:auto;
+}
+.title{             
+       font-weight:bold;
+       text-transform:uppercase;
+}
+.title span{margin-left:5px;}
+.lang{font-style:italic; font-size:10px;}

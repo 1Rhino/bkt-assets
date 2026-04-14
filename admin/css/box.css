@@ -1,0 +1,100 @@
+body
+{
+    background-color: white;
+    color: black;    
+    height: 100%;
+}
+body > #container {
+    height: auto;
+    min-height: 100%;
+}
+#container .header-title
+{
+    color: white;
+    display: block;
+    font-size: 20px;
+    padding-top: 20px;
+}
+#container .box
+{
+    width: 325px; min-height: 300px; margin-top: 60px; margin-left: auto; margin-right: auto;
+}
+#container .box > .heading {
+    background: url("/assets/bg/box_center.png") repeat-x scroll 0 0 transparent;
+    height: 40px;
+    margin-bottom: 0;
+}
+#container .box > .left {
+    background: url("/assets/bg/box_left.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 40px;
+    width: 7px;
+}
+#container .box > .right {
+    background: url("/assets/bg/box_right.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 40px;
+    width: 7px;
+}
+#container .box > .heading h1 {
+    background-position: 2px 9px;
+    background-repeat: no-repeat;
+    color: #003A88;
+    float: left;
+    font-size: 16px;
+    margin: 0;
+    padding: 11px 0 11px 30px;
+}
+#container .box > .heading .buttons {
+    float: right;
+    padding-top: 8px;
+}
+#container .box > .content {
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    min-height: 300px;
+    padding: 10px;
+}
+#container .button {
+    background: url("/assets/bg/button_left.png") no-repeat scroll left top transparent;
+    display: inline-block;
+    margin-right: 5px;
+    padding-left: 8px;
+}
+#container .button span {
+    background: url("/assets/bg/button_right.png") no-repeat scroll right top transparent;
+    color: #FFFFFF;
+    display: block;
+    padding: 5px 10px 5px 2px;
+}
+#container .form {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#container table.form tr td:first-child {
+    width: 200px;
+}
+#container .form > * > * > td {
+    border-bottom: 1px dotted #CCCCCC;
+    color: #000000;
+    padding: 10px;
+}
+#header {
+    background: url("/assets/bg/header.png") repeat-x scroll 0 0 transparent;
+    height: 56px;
+    min-width: 900px;
+    padding: 0 30px;
+}
+#footer {
+    background: url("/assets/bg/footer.png") repeat-x scroll 0 0 #FFFFFF;
+    clear: both;
+    color: #333333;
+    font-size: 12px;
+    height: 50px;
+    margin-top: -128px;
+    padding-top: 38px;
+    position: relative;
+    text-align: center;
+}
